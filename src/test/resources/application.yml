@@ -1,0 +1,20 @@
+
+spring:
+#  datasource:
+#    url: jdbc:h2:mem:test # 메모리 모드로 동작시킨다.
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#    properties:
+#      hibernate:
+#      # show_sql: true
+#        format_sql: true
+
+# 별도의 설정이 없으면 자동으로 메모리 모드로 동작시키기 때문에 위의 자료들은 굳이 써주지 않아도 된다.
+logging.level:
+  org.hibernate.SQL: debug
+  org.hibernate.type: trace
+# org.hibernate.type: trace
