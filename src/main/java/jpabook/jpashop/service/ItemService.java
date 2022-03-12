@@ -15,7 +15,7 @@ public class ItemService {
 
     private final ItemRepository itemRepository;
 
-    @Transactional // readOnly를 무효화하는 오버라이딩
+    @Transactional // readOnly 를 무효화하는 오버라이딩
     public void saveItem(Item item) {
         itemRepository.save(item);
     }
